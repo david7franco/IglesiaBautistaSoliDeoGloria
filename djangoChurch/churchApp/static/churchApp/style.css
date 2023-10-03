@@ -1,0 +1,103 @@
+ .header {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 20px;
+     color: white;
+     inline-size: none;
+     background: transparent;
+     vertical-align: baseline;
+ }
+
+ .header img {
+     width: 63px;
+     height: 104px;
+     object-fit: cover;
+ }
+
+ .church-title {
+     /* Text color */
+     color: black;
+     text-align: left;
+     padding: 30px 30px;
+     /* Padding for each link */
+     text-decoration: wavy;
+     /* Remove underlines from links */
+ }
+
+ /* Style for the navigation */
+ .navbar {
+     display: flex;
+     justify-content: flex-end;
+     background-color: white;
+     /* Background color */
+     width: auto;
+     overflow: hidden;
+ }
+
+ .navbar a {
+     float: right;
+     /* Float the links to the right side */
+     display: block;
+     /* Text color */
+     color: rgb(140, 246, 241);
+     text-align: center;
+     padding: 30px 30px;
+     /* Padding for each link */
+     text-decoration: none;
+     /* Remove underlines from links */
+ }
+
+ .navbar a:hover {
+     background-color: #ddd;
+     /* Background color on hover */
+     color: black;
+     /* Text color on hover */
+ }
+
+ .main-content {
+     display: flex;
+     justify-content: flex-start;
+     /* Adjust as needed */
+     align-items: center;
+     background-color: #f2f2f2;
+     /* Background color similar to the target site */
+     padding: 20px;
+ }
+
+ .image-container img{
+     float: left;
+     height: 500px;
+     width: auto;
+     text-align: center;
+
+ }
+
+ .text-container {
+     text-align: center;
+     font-family: Georgia, serif;
+
+ }
+
+ .text-container h1 {
+     font-size: 50px;
+     /* Adjust font size to match the target site */
+ }
+
+ .text-container h2 {
+     font-size: 50px;
+     /* Adjust font size to match the target site */
+ }
+
+ .text-container h3 {
+     font-size: 35px;
+     /* Adjust font size to match the target site */
+     text-decoration: underline;
+
+ }
+
+ .text-container p {
+     font-size: 35px;
+     /* Adjust font size to match the target site */
+
+ }

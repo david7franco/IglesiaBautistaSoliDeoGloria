@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+<head>
+    <title>IGLESIA BAUTISTA | SOLI DEO GLORIA</title>
+    <link rel = "stylesheet" type="text/css" href="{% static "ChurchApp/style.css" %}">
+</head>
+<body>
+    <header class = "header">
+        <img src='{% static "churchBanner.jpg" %}' alt="image description">
+        <div class="church-title">
+            <h1>IGLESIA BAUTISTA <br> SOLI DEO GLORIA</h1>
+        </div>
+        <div class="navbar">
+            <a href="/">Inicio</a>
+            <a href="/about/">Acerca de Nosotros</a>
+            <a href="/sermons/">Predicaciones</a>
+            <a href="/donate/">Donativos</a>
+            <a href="/contact/">Contacto</a>
+        </div>
+    </header>
+    <main>
+        <div class="image-container">
+            <img src='{% static "churchBanner.jpg" %}' alt="image description">
+        </div> 
+        <div class="text-container">
+            <h1>¡Bienvenidos!</h1>
+            <h2>IGLESA BAUTISTA SOLI DEO GLORIA</h2>
+            <h3>DOMINGOS</h3>
+            <p> 9:30am - Escuela Dominical<br>10:30am - Hora de Predicación</p>
+        </div>
+        <!-- Add more sections or content as needed -->
+    </main>
+</body>
+</html>
