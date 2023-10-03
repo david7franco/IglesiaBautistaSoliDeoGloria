@@ -4,3 +4,5 @@ from django.shortcuts import render
 def main_page(request):
     return render(request, "churchApp/main_page.html", {})
 
+def contact(request):
+    return render(request,"churchApp/contact.html", {})
