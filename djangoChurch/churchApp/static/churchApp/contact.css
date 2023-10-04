@@ -1,0 +1,48 @@
+/* Styles for the header */
+header {
+    background-color: #ac8a8a;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+/* Styles for the main content */
+main {
+    margin: 20px;
+}
+
+/* Styles for the form */
+form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Style for form fields */
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for the submit button */
+form button[type="submit"] {
+    background-color: #ac8a8a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for the footer (if needed) */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}

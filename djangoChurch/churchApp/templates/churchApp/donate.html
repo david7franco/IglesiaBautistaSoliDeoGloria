@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<html>
+<head>
+    <title>Donación</title>
+    <link rel="stylesheet" type="text/css" href="{% static "churchApp/donation.css" %}">
+</head>
+<body>
+    <header>
+        <h1>Donación a la Iglesia</h1>
+    </header>
+    <main>
+        <p>¡Gracias por tu generosidad!</p>
+        <p>Si deseas hacer una donación, puedes hacerlo a través de nuestro botón de donación seguro:</p>
+        <form method="post" action="{% url 'process_donation' %}">
+            {% csrf_token %}
+            <!-- Add donation amount input field if needed -->
+            <!-- Example: <input type="text" name="amount" placeholder="Amount"> -->
+            <button type="submit">Hacer una Donación</button>
+        </form>
+    </main>
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+</body>
+</html>
+{% endblock %} 
