@@ -25,9 +25,10 @@ SECRET_KEY = 'django-insecure-$k4d-a3*9lvdmvvx4f@kh=bvoazf*8)d1oqnh0)u+oy&#_)v63
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# API KEY FOR GOOGLE MAPS
+GOOGLE_API_KEY= 'AIzaSyBmusEnQYr-Ub9h3afniEfwpIV08Uq7Htw'
+
 ALLOWED_HOSTS = []
-
-
 # Application definition
 
 INSTALLED_APPS = [

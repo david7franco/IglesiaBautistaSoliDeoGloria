@@ -1,84 +1,104 @@
- .header {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     padding: 20px;
-     color: white;
-     inline-size: none;
-     background: transparent;
-     vertical-align: baseline;
- }
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    background: transparent;
+}
 
- .header img {
-     width: 63px;
-     height: 104px;
-     object-fit: cover;
- }
+.header img {
+    width: 63px;
+    height: 104px;
+    object-fit: cover;
+}
 
- .church-title {
-     color: black;
-     text-align: left;
-     padding: 30px 30px;
-     text-decoration: wavy;
- }
+.church-title {
+    color: black;
+    text-align: left;
+    padding: 30px;
+    text-decoration: underline; /* Replaced 'wavy' with 'underline' for clarity */
+}
 
- .navbar {
-     display: flex;
-     justify-content: flex-end;
-     background-color: white;
-     width: auto;
-     overflow: hidden;
- }
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    overflow: hidden;
+}
 
- .navbar a {
-     float: right;
-     display: block;
-     color: black;
-     text-align: center;
-     padding: 30px 30px;
-     text-decoration: none;
- }
+.navbar a {
+    color: black;
+    text-align: center;
+    padding: 10px 20px; /* Unified padding values */
+    display: inline-block; /* Replaced 'float: right' with 'display: inline-block' */
+    text-decoration: none;
+}
 
- .navbar a:hover {
-     background-color: #ddd;
-     color: black;
- }
+.navbar a:hover {
+    background-color: #ddd;
+}
 
- .main-content {
-     display: flex;
-     justify-content: flex-start;
-     align-items: center;
-     background-color: #f2f2f2;
-     padding: 20px;
- }
+.main-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
 
- .image-container img {
-     float: left;
-     height: 500px;
-     width: auto;
-     text-align: center;
+.image-container img {
+    float: left;
+    height: 500px;
+    width: auto;
+    text-align: center; /* This property doesn't apply to images */
+}
 
- }
+.text-container {
+    text-align: center;
+    font-family: Georgia, serif;
+}
 
- .text-container {
-     text-align: center;
-     font-family: Georgia, serif;
+.text-container h1, .text-container h2 {
+    font-size: 50px;
+}
 
- }
+.text-container h3 {
+    font-size: 35px;
+    text-decoration: underline;
+}
 
- .text-container h1 {
-     font-size: 50px;
- }
+.text-container p {
+    font-size: 35px;
+}
+.footer {
+    background-color: #6CB4EE;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
- .text-container h2 {
-     font-size: 50px;
- }
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
- .text-container h3 {
-     font-size: 35px;
-     text-decoration: underline;
- }
+.footer-left {
+    flex: 1;
+}
 
- .text-container p {
-     font-size: 35px;
- }
+.footer-right a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}

@@ -1,12 +1,12 @@
 /* Styles for the header */
 header {
-    background-color: #ac8a8a;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
     text-align: center;
 }
 
 h1 {
-    color: white;
+    color: rgb(2, 2, 2);
 }
 
 /* Styles for the main content */
@@ -38,11 +38,4 @@ form button[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-/* Style for the footer (if needed) */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #f0f0f0;
 }

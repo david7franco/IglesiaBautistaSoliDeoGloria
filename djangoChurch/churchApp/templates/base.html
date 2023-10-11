@@ -1,9 +1,15 @@
 {% load static %}
+<!doctype html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>IGLESIA BAUTISTA | SOLI DEO GLORIA</title>
-        <link rel="stylesheet" type="text/css" href="{% static "ChurchApp/style.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "ChurchApp/style.css" %}">        
+        <link rel="stylesheet" type="text/css" href="{% static "ChurchApp/about_us.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "ChurchApp/letter.css" %}">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+
     </head>
     <body>
         <header class="header">
@@ -14,12 +20,16 @@
             <div class="navbar">
                 <a href="/">Inicio</a>
                 <a href="/about_us/">Acerca de Nosotros</a>
-                <a href="/sermons/">Predicaciones</a>
+                <!--<a href="/sermons/">Predicaciones</a> -->
                 <a href="/donate/">Donativos</a>
                 <a href="/contact/">Contacto</a>
             </div>
         </header>
+        <main>
+            <!-- Your main content here -->
+        </main>
         {% block content %}
         {% endblock %} 
+
     </body>
 </html>

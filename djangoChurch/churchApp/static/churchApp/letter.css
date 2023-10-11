@@ -1,0 +1,30 @@
+ .container {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px 0 100px; /* Add padding to the container */
+    background-color: #fafafa; /* White background for content */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for container */
+    margin: 100px auto 0; /* Center the container horizontally and add a top margin */
+    
+}
+ .cursive {
+    font-family: cursive;
+    font-size: larger;
+}
+
+ .left-align {
+    text-align: left;
+    margin: 0 20px;
+ }
+ .PhotoSig {
+    margin: 30px 0px;
+    display: block;
+    margin: left;
+ }
+
+ .PrintSig {
+    text-align: left;
+    margin: -30px 20px;
+
+ }

@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,8 +14,17 @@
         <div class="modal-content">
             <h2>Thank You!</h2>
             <p>Your message has been received.</p>
-            <button id="close-modal">Close</button>
+            <button id="close-modal" onclick="redirectToContactPage()">Close</button>
         </div>
     </div>
 </body>
 </html>
+
+<script>
+    function redirectToContactPage() {
+        // Use JavaScript to navigate to the contact page
+        window.location.href = "/contact/";  // Update this URL to the correct URL of your contact page
+    }
+</script>
+
+{% endblock %}
