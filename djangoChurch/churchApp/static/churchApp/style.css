@@ -2,41 +2,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     color: white;
     background: transparent;
-}
-
-.header img {
-    width: 63px;
-    height: 104px;
-    object-fit: cover;
 }
 
 .church-title {
     color: black;
     text-align: left;
-    padding: 30px;
+    padding: 10px;
     text-decoration: underline; /* Replaced 'wavy' with 'underline' for clarity */
-}
-
-.navbar {
-    display: flex;
-    justify-content: flex-end;
-    background-color: white;
-    overflow: hidden;
-}
-
-.navbar a {
-    color: black;
-    text-align: center;
-    padding: 10px 20px; /* Unified padding values */
-    display: inline-block; /* Replaced 'float: right' with 'display: inline-block' */
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    background-color: #ddd;
 }
 
 .main-content {
