@@ -28,6 +28,21 @@ DEBUG = True
 # API KEY FOR GOOGLE MAPS
 GOOGLE_API_KEY= 'AIzaSyBmusEnQYr-Ub9h3afniEfwpIV08Uq7Htw'
 
+#email services
+DEFAULT_FROM_EMAIL = "davidandrewfranco@gmail.com"
+NOTIFY_EMAIL = "avidandrewfranco@gmail.com"
+#EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"  # new
+
+
+#SMTP EMAIL BACKEND
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'your-email@example.com'
+EMAIL_HOST_PASSWORD = 'your-email-password'
+
+
 ALLOWED_HOSTS = []
 # Application definition
 
@@ -57,7 +72,7 @@ ROOT_URLCONF = 'djangoChurch.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "churchApp/templates/churchApp"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

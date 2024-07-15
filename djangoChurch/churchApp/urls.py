@@ -1,10 +1,12 @@
 from django.urls import path
 from . import views 
+from .views import ContactView
 from django.views.generic.base import RedirectView
 
 urlpatterns = [
     path('', views.main_page, name='main_page'),
-    path('contact/', views.contact, name='contacto'),
+    path("contact/", ContactView.as_view(), name='contact'),
+   #path("success/", SuccessView.as_view(), name="success"),
     path('donate/', views.donation, name='donation'),
     path('process_donation/', views.process_donation, name='process_donation'),
     path('sermons/', views.sermons, name='Predicaciones'),

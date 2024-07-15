@@ -4,6 +4,10 @@ from django.shortcuts import redirect
 from django.shortcuts import HttpResponseRedirect
 from django.shortcuts import HttpResponse
 from django.conf import settings
+from django.core.mail import send_mail
+from django.shortcuts import reverse
+from django.views.generic import TemplateView, FormView
+
 # Create your views here.
 def main_page(request):
     return render(request, "churchApp/main_page.html", {})
@@ -14,24 +18,40 @@ def success(request):
 def sermons(request):
     return render(request, "churchApp/sermons.html")
 
+
+
 #contact page
-
-def contact(request):
+class ContactView(FormView):
     thank_you_message=None
-    if request.method == 'POST':
-        # Handle form submission
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            # Process the form data (e.g., send an email)
-            name = form.cleaned_data['Nombre']
-            email = form.cleaned_data['Email']
-            contact_block = form.cleaned_data['Mensaje']
-            thank_you_message = "Thank you for your submission!"
-    else:
-        # Display the form for initial page load
-        form = ContactForm()
+    form_class = ContactForm
+    template_name = "contact.html"
 
-    return render(request, "churchApp/contact.html", {'form': form, 'thank_you_message': thank_you_message})
+    def get_success_url(self):
+        return reverse("contact")
+    
+    def form_valid(self, form):
+        name = form.cleaned_data['Nombre']
+        email = form.cleaned_data['email']
+        subject = form.cleaned_data['subject']
+        contact_block = form.cleaned_data['Mensaje']
+        thank_you_message = "Thank you for your submission!"
+
+        full_message = f""" 
+        Recieved message below from 
+        {name}, {email}, {subject},
+
+        --------------------------------------
+
+        {contact_block} 
+        """
+
+        send_mail(
+        subject="Received contact form submission",
+        message=full_message,
+        from_email=settings.DEFAULT_FROM_EMAIL,
+        recipient_list=[settings.NOTIFY_EMAIL],
+    )
+        return super(ContactView, self).form_valid(form)
 
 #donation page
 def donation(request):
